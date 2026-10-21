@@ -1,0 +1,41 @@
+
+****** Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2021.2 (64-bit)
+  **** SW Build 3367213 on Tue Oct 19 02:48:09 MDT 2021
+  **** IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+    ** Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+
+source Vitis_HLS/2021.2/scripts/vitis_hls/hls.tcl -notrace
+INFO: Applying HLS Y2K22 patch v1.2 for IP revision
+INFO: [HLS 200-10] Running 'Vitis_HLS/2021.2/bin/unwrapped/win64.o/vitis_hls.exe'
+INFO: [HLS 200-10] For user 'wxl' on host 'laptop-iqtam5rb' (Windows NT_amd64 version 6.2) on Thu Oct 01 10:02:59 +0800 2026
+INFO: [HLS 200-10] In directory 'source_project'
+Sourcing Tcl script '.\scripts\csim_yolo26_p64_150.tcl'
+INFO: [HLS 200-1510] Running: open_project -reset yolo26n_i8_224_p64_150_csim 
+INFO: [HLS 200-10] Creating and opening project 'source_project/build_csim_p64_150/yolo26n_i8_224_p64_150_csim'.
+INFO: [HLS 200-1510] Running: set_top yolo8n_hls_i8 
+INFO: [HLS 200-1510] Running: add_files source_project/src/yolo_hls_i8_26.cpp -cflags -DYOLO_I8_CONV_TILE=64 -DYOLO_I8_FUSE_SPPF_ONCHIP=0 
+INFO: [HLS 200-10] Adding design file 'source_project/src/yolo_hls_i8_26.cpp' to the project
+INFO: [HLS 200-1510] Running: add_files -tb source_project/src/tb_conv1x1.cpp -cflags -DYOLO_I8_CONV_TILE=64 -DYOLO_I8_FUSE_SPPF_ONCHIP=0 
+INFO: [HLS 200-10] Adding test bench file 'source_project/src/tb_conv1x1.cpp' to the project
+INFO: [HLS 200-1510] Running: open_solution solution1 -flow_target vivado 
+INFO: [HLS 200-10] Creating and opening solution 'source_project/build_csim_p64_150/yolo26n_i8_224_p64_150_csim/solution1'.
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see www.xilinx.com/cgi-bin/docs/rdoc?v=2021.2;t=hls+guidance;d=200-1505.html
+INFO: [HLS 200-1510] Running: set_part xc7z020clg400-2 
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg400-2'
+INFO: [HLS 200-1510] Running: create_clock -period 6.666 -name default 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 6.666ns.
+INFO: [HLS 200-1510] Running: csim_design -argv source_project/data/ 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+   Compiling ../../../../../src/tb_conv1x1.cpp in debug mode
+   Compiling ../../../../../src/yolo_hls_i8_26.cpp in debug mode
+   Generating csim.exe
+table: 111 layers, 3238768 weight bytes, 208676 fixed bytes, 1122688 work bytes
+active anchors = 10, active max abs err = 2.265651e-001 (bar 0.50)
+PASS
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 2.047 seconds; current allocated memory: 589.895 MB.
+INFO: [HLS 200-112] Total CPU user time: 1 seconds. Total CPU system time: 1 seconds. Total elapsed time: 2.77 seconds; peak allocated memory: 1.069 GB.
+INFO: [Common 17-206] Exiting vitis_hls at Thu Oct  1 10:03:02 2026...

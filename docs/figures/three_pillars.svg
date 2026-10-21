@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="580" viewBox="0 0 1800 580">
+  <defs>
+    <style>
+      .box{fill:#fff;stroke:#586b86;stroke-width:3}
+      .fill{fill:#f2f5f9}
+      .line{stroke:#586b86;stroke-width:4;fill:none;marker-end:url(#arrow)}
+      .title{font:40px 'Microsoft YaHei',sans-serif;fill:#18243a;text-anchor:middle}
+      .body{font:38px 'Microsoft YaHei',sans-serif;fill:#18243a;text-anchor:middle}
+      .small{font:33px 'Microsoft YaHei',sans-serif;fill:#18243a;text-anchor:middle}
+    </style>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="5" refY="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#586b86"/></marker>
+  </defs>
+  <rect class="box fill" x="65" y="30" width="1670" height="75" rx="9"/>
+  <text class="title" x="900" y="81">共同约束：YOLO26n 算子图 × Zynq-7020 资源 × 超声图像任务</text>
+  <path class="line" d="M325 105 V151 M900 105 V151 M1475 105 V151"/>
+  <g>
+    <rect class="box" x="75" y="160" width="500" height="275" rx="9"/>
+    <rect class="fill" x="77" y="162" width="496" height="69"/>
+    <text class="title" x="325" y="208">新版网络硬件化</text>
+    <text class="body" x="325" y="294">算子依赖审计</text>
+    <text class="body" x="325" y="347">注意力拟合、头部重构</text>
+    <text class="body" x="325" y="400">111 层单次 PL 调用</text>
+  </g>
+  <g>
+    <rect class="box" x="650" y="160" width="500" height="275" rx="9"/>
+    <rect class="fill" x="652" y="162" width="496" height="69"/>
+    <text class="title" x="900" y="208">受限资源数据流</text>
+    <text class="body" x="900" y="294">64 通道权重分块</text>
+    <text class="body" x="900" y="347">8 路行缓存、双像素</text>
+    <text class="body" x="900" y="400">分离量化写回</text>
+  </g>
+  <g>
+    <rect class="box" x="1225" y="160" width="500" height="275" rx="9"/>
+    <rect class="fill" x="1227" y="162" width="496" height="69"/>
+    <text class="title" x="1475" y="208">超声任务适配</text>
+    <text class="body" x="1475" y="294">配对数据与 224 输入</text>
+    <text class="body" x="1475" y="347">增强保持解剖语义</text>
+    <text class="body" x="1475" y="400">同图滤波配对评价</text>
+  </g>
+  <path class="line" d="M325 435 V466 M900 435 V466 M1475 435 V466"/>
+  <rect class="box fill" x="75" y="475" width="1650" height="80" rx="9"/>
+  <text class="small" x="900" y="526">共同验收：定位精度  |  INT8 一致性  |  资源时序  |  板上推理与显示</text>
+</svg>

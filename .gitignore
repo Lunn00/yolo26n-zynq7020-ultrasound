@@ -1,0 +1,39 @@
+# Build outputs and local tool state
+build/
+fpga/hls/build_*/
+fpga/vivado/project/
+fpga/vivado/output/
+fpga/vivado/ip_repository/
+fpga/vivado/ip_repository_gui_alias/
+fpga/vivado/gui_project/
+fpga/vivado/gui_project_complete/
+fpga/vivado/gui_project_alias/
+fpga/vivado/gui_project_alias_input/
+.Xil/
+.metadata/
+*.jou
+*.log
+vivado_pid*.str
+!verification/csim_console.log
+
+# Medical image samples and derived verification vectors need release review.
+review_before_publish/
+manifest.sha256
+verification/ps7_summary.html
+# Local working documents
+*.docx
+*.pdf
+report/
+fpga/hls/data/verify_input_i8.bin
+fpga/hls/data/verify_pred_i8.bin
+datasets/
+sd_card/*.bmp
+model_pipeline/test_img/
+runs_yolo26/
+
+# Python and editor state
+__pycache__/
+*.pyc
+.venv/
+.idea/
+.vscode/

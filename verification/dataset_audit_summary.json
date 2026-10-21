@@ -1,0 +1,28 @@
+{
+  "train": {
+    "images": 880,
+    "labels": 880,
+    "boxes": 880,
+    "missing_labels": [],
+    "orphan_labels": [],
+    "empty_labels": [],
+    "invalid_label_lines": []
+  },
+  "val": {
+    "images": 220,
+    "labels": 220,
+    "boxes": 220,
+    "missing_labels": [],
+    "orphan_labels": [],
+    "empty_labels": [],
+    "invalid_label_lines": []
+  },
+  "manifest": {
+    "rows": 1100,
+    "train_groups": 30,
+    "val_groups": 8,
+    "group_overlap": [],
+    "id_overlap": []
+  },
+  "gate_pass": true
+}

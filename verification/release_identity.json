@@ -1,0 +1,31 @@
+{
+  "model": "YOLO26n INT8",
+  "input_shape": [
+    224,
+    224,
+    3
+  ],
+  "hls_layers": 111,
+  "device": "xc7z020clg400-2",
+  "toolchain": "Vivado/Vitis/Vitis HLS 2021.2",
+  "clock_mhz": 150,
+  "artifacts_sha256": {
+    "model_pipeline/model_conv1x1_fit.pt": "a07661939fdb34f0503c081dd67a5b8906c64cd14aad7707e25879e0096569db",
+    "model_pipeline/model_conv1x1_fit.onnx": "26be212a53ebd60da74cbffe1dc2dde2a9fe9f06d8518f2c2b55850fcca8aa12",
+    "fpga/hls/src/yolo_hls_i8_26.cpp": "f9368de02e75694a50f30d5c16ab582297f056d88e29eb311bea69357bb3951a",
+    "fpga/hls/src/yolo_layers_i8.h": "1e1219c09238be49712aff06e4fbfd915fb00a560eaee14f2d3030962f40de48",
+    "fpga/hls/data/yolo26n_weights_i8.bin": "a1b64e2c5ba294539532a49f8516dc5be03896c8d4c8d2fcd3d14ae1b79ab7f0",
+    "fpga/hls/data/yolo_fixed_params_i8.bin": "6569512da55773b5af525832d684e3f40bf1588e93021c182da837aa36ade220",
+    "fpga/vivado/project_sources/validated_bd/system/system.bd": "525f9f3a79a14f097b85945010b3cc4bbe636b1f665a3453b90ea2e3f281f514",
+    "prebuilt/hls_ip_export.zip": "e69202930c942204b9aa34d9fce72fafd48aa6e45338e73871316f56101a99fc",
+    "prebuilt/system_wrapper.bit": "f88fb7372a0cd870ba5dece2364b6ea923245c840eb13f535506ef44de353d63",
+    "prebuilt/fsbl.elf": "e27494b2d946bf3c31f248608c641cdc54c5b1ed747fa01ff70fd1e22590e598",
+    "prebuilt/yolo26_lcd_ui.elf": "da58c1448053dc8c843f0b54699df065a3a280242ccd01c947e5fc4ae58f676e",
+    "sd_card/boot.bin": "5f0ac87dd9a3eee060ded887cc88bfce381bb843a31237f20fb5ee7b574d1851"
+  },
+  "evidence": {
+    "implementation": "fpga/vivado/reports/",
+    "csim": "verification/csim_console.log",
+    "board": "verification/serial_run_128_raw_three_times.md"
+  }
+}

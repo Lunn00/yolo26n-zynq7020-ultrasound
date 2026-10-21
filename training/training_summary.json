@@ -1,0 +1,26 @@
+[
+  {
+    "name": "yolo26n",
+    "weights": "yolo26n.pt",
+    "imgsz": 224,
+    "epochs_requested": 300,
+    "seconds": 3011.7,
+    "best_pt": "runs_yolo26/yolo26n_224/weights/best.pt",
+    "best_pt_exists": true,
+    "metrics": {
+      "metrics/precision(B)": 0.9728401278635168,
+      "metrics/recall(B)": 0.9954545454545455,
+      "metrics/mAP50(B)": 0.9942297151354932,
+      "metrics/mAP50-95(B)": 0.8645424025404781,
+      "fitness": 0.8645424025404781
+    },
+    "speed_ms": {
+      "preprocess": 0.18808363636873598,
+      "inference": 1.5148427272792602,
+      "loss": 0.00014181818270034537,
+      "postprocess": 0.2285236363646122
+    },
+    "best_map50_train": 0.995,
+    "best_map50_epoch": "166"
+  }
+]

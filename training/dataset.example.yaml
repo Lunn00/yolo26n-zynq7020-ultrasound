@@ -1,0 +1,6 @@
+# Put authorized images and labels under datasets/carotid/ or edit path.
+path: datasets/carotid
+train: images/train
+val: images/val
+names:
+  0: carotid_plaque

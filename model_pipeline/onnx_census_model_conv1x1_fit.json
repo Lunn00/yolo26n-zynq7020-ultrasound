@@ -1,0 +1,22 @@
+{
+  "nodes": 368,
+  "ops": {
+    "Conv": 98,
+    "Sigmoid": 88,
+    "Mul": 90,
+    "Split": 9,
+    "Add": 21,
+    "Concat": 23,
+    "MaxPool": 3,
+    "Constant": 20,
+    "Resize": 2,
+    "Reshape": 6,
+    "Shape": 1,
+    "Gather": 1,
+    "Div": 2,
+    "Slice": 2,
+    "Sub": 2
+  },
+  "grouped_conv_count": 0,
+  "forbidden_ops": []
+}

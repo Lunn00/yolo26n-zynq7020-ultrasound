@@ -1,0 +1,2 @@
+# Keep artifact hashes stable across Windows and non-Windows clones.
+* -text
