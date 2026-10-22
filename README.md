@@ -18,6 +18,8 @@ YOLO26n 中的特殊算子和距离检测头需要适配可综合的数据通路
 | `skill/` | 可加载技能、通用工作流、方法、验证证据与校验脚本 |
 | `scripts/` | HLS、Vivado、Vitis、BOOT 与 SD 卡构建脚本 |
 
+按源码、验证、构建、上板和数据查找时，分别对应 `fpga/hls/src/` 与 `software/ps/src/`、`verification/`、`scripts/` 与 `fpga/vivado/reports/`、`prebuilt/` 与 `sd_card/`、`fpga/hls/data/` 与 `training/`。
+
 数据集和由医学图像派生的验证向量未公开；复建训练和 C 仿真时需提供有权使用的图像、标签和黄金参考。交付 IP 内部的 `yolo8n_hls_i8` 是生成时的模块标识，当前模型与层表为 YOLO26n；更改该标识会影响 BD 引用。
 
 ## 复建入口
