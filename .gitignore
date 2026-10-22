@@ -18,7 +18,6 @@ vivado_pid*.str
 
 # Medical image samples and derived verification vectors need release review.
 review_before_publish/
-manifest.sha256
 verification/ps7_summary.html
 # Local working documents
 *.docx

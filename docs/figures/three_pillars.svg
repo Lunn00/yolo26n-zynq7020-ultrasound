@@ -4,9 +4,9 @@
       .box{fill:#fff;stroke:#586b86;stroke-width:3}
       .fill{fill:#f2f5f9}
       .line{stroke:#586b86;stroke-width:4;fill:none;marker-end:url(#arrow)}
-      .title{font:40px 'Microsoft YaHei',sans-serif;fill:#18243a;text-anchor:middle}
-      .body{font:38px 'Microsoft YaHei',sans-serif;fill:#18243a;text-anchor:middle}
-      .small{font:33px 'Microsoft YaHei',sans-serif;fill:#18243a;text-anchor:middle}
+      .title{font:40px 'SimSun',serif;fill:#18243a;text-anchor:middle}
+      .body{font:38px 'SimSun',serif;fill:#18243a;text-anchor:middle}
+      .small{font:33px 'SimSun',serif;fill:#18243a;text-anchor:middle}
     </style>
     <marker id="arrow" markerWidth="10" markerHeight="10" refX="5" refY="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#586b86"/></marker>
   </defs>
