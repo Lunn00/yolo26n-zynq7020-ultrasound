@@ -16,11 +16,11 @@ Turn a trained inference graph into a measured FPGA implementation. Start from t
 5. **Isolate the optimization mechanism.** State the predicted bottleneck and the observation that would disprove it. Keep independent changes separate; record coupled source and parameter changes as one candidate. Measure buffer equality, HLS schedule, routed resource/timing, and board latency at the boundaries relevant to that candidate. Use [optimization.md](references/optimization.md) to decide whether a local improvement has system value.
 6. **Freeze the release.** Link model, quantization files, layer table, IP, bitstream, software, reports, and test vectors to one build identity. Use [release_identity.md](references/release_identity.md) when handing the design to another developer or preparing a submission.
 
-## Minimum evidence to return
+## Evidence to return
 
-- A contract table describing the input and output semantics, validation unit, quantization convention, and measurement window.
-- A design decision table with the alternatives, expected resource and communication cost, task-metric effect, and the experiment used to choose among them.
-- A verification ladder naming each compared buffer or report, its build identity, observed result, and the next action if it differs.
-- A release map linking the final model and all generated hardware/software artifacts.
+- For a contract change, describe the input and output semantics, validation unit, quantization convention, and measurement window.
+- For an architecture choice, compare the alternatives, expected resource and communication cost, task-metric effect, and the experiment used to choose among them.
+- For a mismatch, name the compared buffers or reports, their build identity, the first observed difference, and the next discriminating check.
+- For a release, link the model and generated hardware/software artifacts to one build identity.
 
-Keep the general method in the skill. Store project-specific chronology, fixed constants, and measured effects with that project's evidence so they are interpreted in the correct model and device context.
+Return only the evidence relevant to the request. Keep the general method in the skill; store project-specific chronology, fixed constants, and measured effects with that project's evidence.
